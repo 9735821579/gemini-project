@@ -1,0 +1,64 @@
+2025-10-15 16:48:41,768 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 16:49:04,535 [INFO] Received task captcha-solver-123. Background processing started.
+2025-10-15 16:49:04,537 [INFO] [PROCESS START] Task: captcha-solver-123 Round: 1
+2025-10-15 16:49:04,547 [INFO] [CLEANUP] Removing local directory: /mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/generated_tasks/captcha-solver-123
+2025-10-15 16:49:04,960 [INFO] [GIT] R1: Creating remote repo 'captcha-solver-123'
+2025-10-15 16:49:05,822 [ERROR] GitHub API error: {"message":"Repository creation failed.","errors":[{"resource":"Repository","code":"custom","field":"name","message":"name already exists on this account"}],"documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"422"}
+Traceback (most recent call last):
+  File "/mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/main.py", line 214, in setup_local_repo
+    resp.raise_for_status()
+  File "/home/sanju_iitm/.local/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://api.github.com/user/repos'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-10-15 16:49:05,840 [ERROR] [CRITICAL FAILURE] Task captcha-solver-123 failed: Client error '422 Unprocessable Entity' for url 'https://api.github.com/user/repos'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+Traceback (most recent call last):
+  File "/mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/main.py", line 451, in generate_files_and_deploy
+    repo = await setup_local_repo(local_path, repo_name, repo_url_auth, repo_url_http, round_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/main.py", line 214, in setup_local_repo
+    resp.raise_for_status()
+  File "/home/sanju_iitm/.local/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://api.github.com/user/repos'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-10-15 16:49:05,843 [INFO] [PROCESS END] Task: captcha-solver-123 Round: 1
+2025-10-15 16:49:05,844 [INFO] [BACKGROUND TASK] Task finished successfully.
+2025-10-15 16:49:10,910 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 16:49:40,170 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 16:50:09,262 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 16:50:38,417 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 16:51:07,527 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 16:51:14,200 [INFO] [SHUTDOWN] Waiting for background tasks to finish (graceful shutdown)...
+2025-10-15 16:59:31,717 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 17:00:01,719 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 17:00:15,147 [INFO] Received task captcha-solver-123. Background processing started.
+2025-10-15 17:00:15,148 [INFO] [PROCESS START] Task: captcha-solver-123 Round: 1
+2025-10-15 17:00:15,152 [INFO] [CLEANUP] Removing local directory: /mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/generated_tasks/captcha-solver-123
+2025-10-15 17:00:15,222 [INFO] [GIT] R1: Creating remote repo 'captcha-solver-123'
+2025-10-15 17:00:15,818 [ERROR] GitHub API error: {"message":"Repository creation failed.","errors":[{"resource":"Repository","code":"custom","field":"name","message":"name already exists on this account"}],"documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"422"}
+Traceback (most recent call last):
+  File "/mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/main.py", line 214, in setup_local_repo
+    resp.raise_for_status()
+  File "/home/sanju_iitm/.local/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://api.github.com/user/repos'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-10-15 17:00:15,846 [ERROR] [CRITICAL FAILURE] Task captcha-solver-123 failed: Client error '422 Unprocessable Entity' for url 'https://api.github.com/user/repos'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+Traceback (most recent call last):
+  File "/mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/main.py", line 451, in generate_files_and_deploy
+    repo = await setup_local_repo(local_path, repo_name, repo_url_auth, repo_url_http, round_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/DATA SCIENCE/TDS WORK/GEMINI_PROJECT/main.py", line 214, in setup_local_repo
+    resp.raise_for_status()
+  File "/home/sanju_iitm/.local/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://api.github.com/user/repos'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-10-15 17:00:15,848 [INFO] [PROCESS END] Task: captcha-solver-123 Round: 1
+2025-10-15 17:00:15,849 [INFO] [BACKGROUND TASK] Task finished successfully.
+2025-10-15 17:00:30,861 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 17:00:59,964 [INFO] [KEEPALIVE] Service heartbeat
+2025-10-15 17:01:13,170 [INFO] [SHUTDOWN] Waiting for background tasks to finish (graceful shutdown)...
