@@ -128,6 +128,7 @@ def data_uri_to_gemini_part(data_uri: str) -> Optional[dict]:
 async def attachment_to_gemini_part(attachment_url: str) -> Optional[dict]:
     if not attachment_url:
         return None
+    attachment_url = attachment_url.strip()    
     if attachment_url.startswith("data:"):
         return data_uri_to_gemini_part(attachment_url)
     if attachment_url.startswith(("http://", "https://")):
@@ -674,3 +675,4 @@ async def shutdown_event():
                 pass
     await asyncio.sleep(0.5)
     flush_logs()
+
